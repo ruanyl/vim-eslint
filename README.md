@@ -9,8 +9,10 @@ How to install
 ###vim-plug
 
 ```vim
-Plug 'ruanyl/vim-eslint'
+Plug 'ruanyl/vim-eslint', {'do': 'npm install'}
 ```
+
+or `cd path/to/vim-eslint` then run `npm install`
 
 Then restart vim and run `:PlugInstall`.
 To update the plugin to the latest version, you can run `:PlugUpdate`.
