@@ -1,0 +1,3 @@
+[submodule "eslint_d.js"]
+	path = eslint_d.js
+	url = https://github.com/ruanyl/eslint_d.js.git
