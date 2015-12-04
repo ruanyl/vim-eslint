@@ -33,7 +33,17 @@ func! s:restart_eslint_d()
     call system(s:vim_eslint_d_exec . ' restart')
 endfun
 
-call <SID>start_eslint_d()
+func! s:status_eslint_d()
+    return system(s:vim_eslint_d_exec . ' status')
+endfunc
+
+let s:status = <SID>status_eslint_d()
+" if eslint_d is running, restart it
+if s:status ==? "Not running"
+    call <SID>start_eslint_d()
+else
+    call <SID>restart_eslint_d()
+endif
 
 command! EslintStart call <SID>start_eslint_d()
 command! EslintStop call <SID>stop_eslint_d()
