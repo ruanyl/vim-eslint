@@ -8,20 +8,13 @@ How to install
 -----------------------
 ###vim-plug
 
-~~Plug 'ruanyl/vim-eslint', {'do': 'npm install'}~~
 
 Add this if you are using `vim-plug`
 ```vim
-Plug 'ruanyl/vim-eslint', {'do': 'cd eslint_d.js && npm install'}
+Plug 'ruanyl/vim-eslint', {'do': 'npm install'}
 ```
 
-or you will need to manually:
-```
-cd path/to/vim-eslint/eslint_d.js
-npm install
-```
-
-~~or `cd path/to/vim-eslint` then run `npm install`~~
+or `cd path/to/vim-eslint` then run `npm install`
 
 Then restart vim and run `:PlugInstall`.
 To update the plugin to the latest version, you can run `:PlugUpdate`.
