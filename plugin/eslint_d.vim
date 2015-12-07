@@ -17,8 +17,8 @@ let s:plugin_root_directory = fnamemodify(expand("<sfile>"), ":h:h")
 let s:eslint_d_portfile = $HOME . '/.eslint_d_port'
 " use local eslint_d.js instead, this is a temporary fix for eslint which has
 " plugins installed globally
-"let s:vim_eslint_d_exec = s:plugin_root_directory . '/node_modules/eslint_d/bin/eslint_d.js'
-let s:vim_eslint_d_exec = s:plugin_root_directory . '/eslint_d.js/bin/eslint_d.js'
+let s:vim_eslint_d_exec = s:plugin_root_directory . '/node_modules/eslint_d/bin/eslint_d.js'
+"let s:vim_eslint_d_exec = s:plugin_root_directory . '/eslint_d.js/bin/eslint_d.js'
 let g:syntastic_javascript_eslint_exec = s:vim_eslint_d_exec
 
 func! s:start_eslint_d()

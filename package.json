@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ruanyl/vim-eslint",
   "dependencies": {
-    "eslint_d": "^2.3.1"
+    "eslint_d": "git://github.com/ruanyl/eslint_d.js.git"
   }
 }
